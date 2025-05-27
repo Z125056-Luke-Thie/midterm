@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+    .fullscreen_container-responsive-this_is_me {
+        height: auto;
+        margin-bottom: 200px;
+    }
+
+    .fullscreen_container-responsive-hobbies {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .my_hobbies-item-picture_bg {
+        height: 208px;
+    }
+
+    .projects-image_container {
+        height: 208px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .my_hobbies-item-picture_bg {
+        height: 148px;
+    }
+
+    .projects-image_container {
+        height: 148px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header-container {
+        display: block;
+        text-align: center;
+    }
+}

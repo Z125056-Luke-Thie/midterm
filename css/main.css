@@ -1,0 +1,242 @@
+body {
+    background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDljcXUwcm94d2l4OTlveThpeDdwd29nOWhjdW52NDNraWhzc2w4ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUOxeSTrDP4vsF2TXq/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Protest Revolution", sans-serif;
+    position: relative;
+    height: 100vh;
+}
+
+#about_me-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#about_me-menu p {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.fullscreen_container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.fullscreen_container h1 {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 0.60) 100%);
+    color: #454141;
+    font-size: 40px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.header-container {
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(45, 38, 38, 0.0), rgba(45, 38, 38, 0.5), rgba(45, 38, 38, 0.0));
+    background-color: rgba(45, 38, 38, 0.5);
+    display: none;
+    font-size: 30px;
+    justify-content: space-evenly;
+    opacity: 0;
+    padding: 10px 20px;
+    position: absolute;
+    text-transform: uppercase;
+    top:0;
+    transition: opacity 1s ease;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-container p {
+    color: #CDCBCB;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.header-container p:hover{
+    cursor: pointer;
+}
+
+.header-container_visible {
+    display: flex;
+    opacity: 1!important;
+}
+
+.home-container {
+    height: 100vh;
+    align-items: center;
+}
+
+.homeText {
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    justify-content: space-evenly;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: opacity 1s;
+}
+
+.homeText-fade_in {
+    opacity: 1;
+}
+
+.homeText-fade_out {
+    opacity: 0;
+}
+
+.homeText-background {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 0.60) 100%);
+    transition: width, ease-in, 1s;
+    color: #454141;
+    padding: 10px 40px;
+}
+
+#my_hobbies {
+    overflow: hidden;
+    transition: height 0.5s ease;
+    position: relative;
+}
+
+#my_hobbies-choose_section {
+    overflow: hidden;
+    transition: height 0.5s ease;
+    position: relative;
+}
+
+#my_hobbies-cars {
+
+}
+
+#my_hobbies-music {
+
+}
+
+#my_hobbies-gaming {
+
+}
+
+#my_hobbies-back {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 2px black;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#my_hobbies-back i {
+    font-size: 40px;
+}
+
+.my_hobbies-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.my_hobbies-item-picture_bg {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.my_hobbies-item-title {
+    align-items: center;
+}
+
+.my_hobbies-item-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#my_hobbies-title {
+    margin-bottom: 30px;
+}
+
+#page_home {
+    display: block;
+}
+
+#page_about {
+    display: none;
+}
+
+#page_projects {
+    display: none;
+}
+
+.projects-image_container {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+#projects-item_selector {
+    background-color: rgba(45, 38, 38, 0.5);
+    border-width: 2px;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#projects-item_selector option {
+    background-color: rgba(45, 38, 38, 0.5);
+    color: #E7E7E7;
+}
+
+.item-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+.item-visible {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#projects-text_container {
+    overflow: hidden;
+    transition: height 0.5s ease;
+    position: relative;
+}
+
+#projects-text_container p {
+    display: none;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#this_is_me-photo {
+    background-image: url("../imgs/about_me-profile_picture.jpg");
+    background-size: cover;
+    background-position: right bottom;
+    height: 500px;
+}
+
+#this_is_me-text {
+    font-size: 20px;
+}
+
+#this_is_me-text h3 {
+    font-size: 25px;
+}
