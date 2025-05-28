@@ -37,7 +37,31 @@ body {
     color: #454141;
     font-size: 40px;
     padding: 10px 40px;
+    text-align: center;
     text-transform: uppercase;
+}
+
+.fullscreen_container h2 {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 0.60) 100%);
+    color: #454141;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.fullscreen_container h3 {
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 0.60) 100%);
+    color: #454141;
+    font-size: 40px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.fullscreen_container p {
+    font-size: 20px;
 }
 
 .header-container {
@@ -83,6 +107,7 @@ body {
     font-size: 40px;
     justify-content: space-evenly;
     opacity: 0;
+    text-align: center;
     text-transform: uppercase;
     transition: opacity 1s;
 }
@@ -115,18 +140,6 @@ body {
     position: relative;
 }
 
-#my_hobbies-cars {
-
-}
-
-#my_hobbies-music {
-
-}
-
-#my_hobbies-gaming {
-
-}
-
 #my_hobbies-back {
     display: flex;
     font-size: 20px;
@@ -145,6 +158,12 @@ body {
     background-size: cover;
     background-position: center;
     height: 300px;
+    transition: 0.5s;
+}
+
+.my_hobbies-item:hover {
+    scale: 110%;
+    transition-timing-function: ease-in-out;
 }
 
 .my_hobbies-item-picture_bg {
@@ -158,7 +177,7 @@ body {
 }
 
 .my_hobbies-item-text {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 25px;
 }
 
@@ -203,15 +222,22 @@ body {
     color: #E7E7E7;
 }
 
+.projects-philosophy-image {
+    background-image: url("../imgs/about_me-profile_picture.jpg");
+    background-size: cover;
+    background-position: left top;
+    height: 300px;
+}
+
 .item-hidden {
     opacity: 0;
     pointer-events: none;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
 }
 
 .item-visible {
     opacity: 1;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
 }
 
 #projects-text_container {

@@ -23,17 +23,17 @@ async function showTexts() {
         container.appendChild(addedText);
 
         // Trigger fade-in
-        await delay(100); // wait for DOM to render
+        await delay(500); // wait for DOM to render
         addedText.classList.add("homeText-fade_in");
 
         // Wait before fade out
-        await delay(1000); // show duration
+        await delay(1200); // show duration
 
         if (i < arrayLength - 1) {
             // Fade out and remove
             addedText.classList.remove("homeText-fade_in");
             addedText.classList.add("homeText-fade_out");
-            await delay(1000); // wait for fade out transition
+            await delay(800); // wait for fade out transition
             container.removeChild(addedText);
         }
         else {
@@ -42,9 +42,17 @@ async function showTexts() {
     }
 
     const header = document.querySelector(".header-container");
-    header.style.display = "flex";
+    if(screen.width > 575) {
+        header.style.display = "flex";
+    }
+    else {
+        header.style.display = "block";
+    }
+
     await delay(50);
     header.classList.add("header-container_visible");
+
+
 
 }
 
